@@ -1,0 +1,158 @@
+[
+  {
+    "feature": "PM2.5_roll_mean_6h",
+    "importance": 0.3795
+  },
+  {
+    "feature": "PM2.5_lag0",
+    "importance": 0.1729
+  },
+  {
+    "feature": "PM2.5_roll_mean_24h",
+    "importance": 0.1286
+  },
+  {
+    "feature": "PM2.5",
+    "importance": 0.0983
+  },
+  {
+    "feature": "PM2.5_lag1",
+    "importance": 0.0215
+  },
+  {
+    "feature": "PM2.5_lag6",
+    "importance": 0.02
+  },
+  {
+    "feature": "PM2.5_roll_min_24h",
+    "importance": 0.019
+  },
+  {
+    "feature": "year",
+    "importance": 0.0149
+  },
+  {
+    "feature": "PM2.5_lag3",
+    "importance": 0.0125
+  },
+  {
+    "feature": "month",
+    "importance": 0.0092
+  },
+  {
+    "feature": "PM2.5_lag12",
+    "importance": 0.0087
+  },
+  {
+    "feature": "month_cos",
+    "importance": 0.0085
+  },
+  {
+    "feature": "day",
+    "importance": 0.0058
+  },
+  {
+    "feature": "PM2.5_roll_max_24h",
+    "importance": 0.0052
+  },
+  {
+    "feature": "PM10_lag24",
+    "importance": 0.0051
+  },
+  {
+    "feature": "AT_lag24",
+    "importance": 0.0051
+  },
+  {
+    "feature": "dow_sin",
+    "importance": 0.0049
+  },
+  {
+    "feature": "PM10",
+    "importance": 0.0048
+  },
+  {
+    "feature": "PM2.5_lag2",
+    "importance": 0.0047
+  },
+  {
+    "feature": "month_sin",
+    "importance": 0.0047
+  },
+  {
+    "feature": "dow_cos",
+    "importance": 0.0044
+  },
+  {
+    "feature": "PM2.5_roll_std_24h",
+    "importance": 0.0044
+  },
+  {
+    "feature": "SO2",
+    "importance": 0.0042
+  },
+  {
+    "feature": "dayofweek",
+    "importance": 0.0041
+  },
+  {
+    "feature": "hour_sin",
+    "importance": 0.0041
+  },
+  {
+    "feature": "hour_cos",
+    "importance": 0.004
+  },
+  {
+    "feature": "AT",
+    "importance": 0.0038
+  },
+  {
+    "feature": "hour",
+    "importance": 0.0038
+  },
+  {
+    "feature": "WD",
+    "importance": 0.0036
+  },
+  {
+    "feature": "NO2_lag24",
+    "importance": 0.0035
+  },
+  {
+    "feature": "Ozone",
+    "importance": 0.0035
+  },
+  {
+    "feature": "RH",
+    "importance": 0.0035
+  },
+  {
+    "feature": "PM2.5_lag48",
+    "importance": 0.0032
+  },
+  {
+    "feature": "RH_lag24",
+    "importance": 0.0032
+  },
+  {
+    "feature": "WS",
+    "importance": 0.0028
+  },
+  {
+    "feature": "NO2",
+    "importance": 0.0028
+  },
+  {
+    "feature": "PM2.5_lag24",
+    "importance": 0.0027
+  },
+  {
+    "feature": "PM2.5_roll_std_6h",
+    "importance": 0.0026
+  },
+  {
+    "feature": "CO",
+    "importance": 0.0018
+  }
+]

@@ -1,0 +1,221 @@
+{
+  "origin_timestamp": "2026-11-07 00:00:00",
+  "horizons": [
+    {
+      "hour": 1,
+      "horizon_label": "+1h",
+      "actual": 17.1,
+      "persistence": 20.4,
+      "random_forest": 17.3,
+      "xgboost": 18.6,
+      "lstm": 23.3
+    },
+    {
+      "hour": 2,
+      "horizon_label": "+2h",
+      "actual": 19.2,
+      "persistence": 18.5,
+      "random_forest": 17.6,
+      "xgboost": 19.2,
+      "lstm": 23.3
+    },
+    {
+      "hour": 3,
+      "horizon_label": "+3h",
+      "actual": 21.6,
+      "persistence": 17.6,
+      "random_forest": 18.3,
+      "xgboost": 22.2,
+      "lstm": 23.4
+    },
+    {
+      "hour": 4,
+      "horizon_label": "+4h",
+      "actual": 18.7,
+      "persistence": 17.0,
+      "random_forest": 19.5,
+      "xgboost": 21.1,
+      "lstm": 23.3
+    },
+    {
+      "hour": 5,
+      "horizon_label": "+5h",
+      "actual": 17.6,
+      "persistence": 16.9,
+      "random_forest": 20.6,
+      "xgboost": 23.8,
+      "lstm": 23.5
+    },
+    {
+      "hour": 6,
+      "horizon_label": "+6h",
+      "actual": 16.9,
+      "persistence": 18.1,
+      "random_forest": 21.4,
+      "xgboost": 26.6,
+      "lstm": 23.5
+    },
+    {
+      "hour": 7,
+      "horizon_label": "+7h",
+      "actual": 17.2,
+      "persistence": 17.4,
+      "random_forest": 21.1,
+      "xgboost": 31.7,
+      "lstm": 23.6
+    },
+    {
+      "hour": 8,
+      "horizon_label": "+8h",
+      "actual": 16.4,
+      "persistence": 21.1,
+      "random_forest": 20.7,
+      "xgboost": 39.6,
+      "lstm": 23.7
+    },
+    {
+      "hour": 9,
+      "horizon_label": "+9h",
+      "actual": 19.3,
+      "persistence": 18.3,
+      "random_forest": 20.8,
+      "xgboost": 28.9,
+      "lstm": 23.5
+    },
+    {
+      "hour": 10,
+      "horizon_label": "+10h",
+      "actual": 20.4,
+      "persistence": 16.9,
+      "random_forest": 20.9,
+      "xgboost": 25.7,
+      "lstm": 23.6
+    },
+    {
+      "hour": 11,
+      "horizon_label": "+11h",
+      "actual": 16.0,
+      "persistence": 16.6,
+      "random_forest": 21.1,
+      "xgboost": 24.9,
+      "lstm": 23.7
+    },
+    {
+      "hour": 12,
+      "horizon_label": "+12h",
+      "actual": 18.9,
+      "persistence": 16.6,
+      "random_forest": 20.8,
+      "xgboost": 34.4,
+      "lstm": 23.9
+    },
+    {
+      "hour": 13,
+      "horizon_label": "+13h",
+      "actual": 19.9,
+      "persistence": 16.2,
+      "random_forest": 20.3,
+      "xgboost": 25.1,
+      "lstm": 23.9
+    },
+    {
+      "hour": 14,
+      "horizon_label": "+14h",
+      "actual": 18.4,
+      "persistence": 15.8,
+      "random_forest": 19.7,
+      "xgboost": 26.5,
+      "lstm": 23.6
+    },
+    {
+      "hour": 15,
+      "horizon_label": "+15h",
+      "actual": 19.4,
+      "persistence": 15.8,
+      "random_forest": 19.5,
+      "xgboost": 24.9,
+      "lstm": 23.9
+    },
+    {
+      "hour": 16,
+      "horizon_label": "+16h",
+      "actual": 19.1,
+      "persistence": 16.1,
+      "random_forest": 20.4,
+      "xgboost": 26.7,
+      "lstm": 23.8
+    },
+    {
+      "hour": 17,
+      "horizon_label": "+17h",
+      "actual": 19.8,
+      "persistence": 16.4,
+      "random_forest": 21.4,
+      "xgboost": 28.2,
+      "lstm": 24.0
+    },
+    {
+      "hour": 18,
+      "horizon_label": "+18h",
+      "actual": 18.1,
+      "persistence": 15.9,
+      "random_forest": 21.8,
+      "xgboost": 26.3,
+      "lstm": 23.8
+    },
+    {
+      "hour": 19,
+      "horizon_label": "+19h",
+      "actual": 15.8,
+      "persistence": 16.3,
+      "random_forest": 21.9,
+      "xgboost": 31.0,
+      "lstm": 24.0
+    },
+    {
+      "hour": 20,
+      "horizon_label": "+20h",
+      "actual": 18.3,
+      "persistence": 16.8,
+      "random_forest": 22.0,
+      "xgboost": 40.1,
+      "lstm": 23.9
+    },
+    {
+      "hour": 21,
+      "horizon_label": "+21h",
+      "actual": 20.2,
+      "persistence": 16.5,
+      "random_forest": 22.6,
+      "xgboost": 36.4,
+      "lstm": 23.8
+    },
+    {
+      "hour": 22,
+      "horizon_label": "+22h",
+      "actual": 27.4,
+      "persistence": 16.2,
+      "random_forest": 24.0,
+      "xgboost": 43.9,
+      "lstm": 24.1
+    },
+    {
+      "hour": 23,
+      "horizon_label": "+23h",
+      "actual": 31.0,
+      "persistence": 16.7,
+      "random_forest": 26.5,
+      "xgboost": 34.8,
+      "lstm": 23.7
+    },
+    {
+      "hour": 24,
+      "horizon_label": "+24h",
+      "actual": 25.2,
+      "persistence": 17.4,
+      "random_forest": 28.6,
+      "xgboost": 28.3,
+      "lstm": 23.6
+    }
+  ]
+}
