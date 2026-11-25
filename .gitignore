@@ -28,6 +28,10 @@ wheels/
 .installed.cfg
 *.egg
 
+# Data cache
+data/cache/
+*.cache
+
 # Node / Web Frontend
 node_modules/
 npm-debug.log*
