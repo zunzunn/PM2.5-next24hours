@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PM2.5-next24hours — AI Predictive Air Quality Advisory Platform</title>
+  <meta name="description" content="AI-powered 24-hour PM2.5 forecasting and public health advisory platform for Indian cities. Dayananda Sagar College of Engineering.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Atmospheric Sky Viewport & Ambient Floating Glows -->
+  <div class="sky-viewport" id="landingSkyViewport"></div>
+  <div class="ambient-cloud ambient-cloud-1"></div>
+  <div class="ambient-cloud ambient-cloud-2"></div>
+  <div class="sky-scrim"></div>
+
+  <!-- Sticky Glass Navigation -->
+  <nav class="sticky-nav" aria-label="Main Navigation">
+    <a href="index.html" class="nav-brand">
+      <span id="navIcon"></span>
+      <span>PM2.5 Forecast</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#problem">Problem</a></li>
+      <li><a href="#approach">Approach</a></li>
+      <li><a href="#data">Data</a></li>
+      <li><a href="#benchmarks">Benchmarks</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="dashboard.html" class="btn-primary" style="padding: 8px 18px; font-size: 14px;">Open Dashboard</a></li>
+    </ul>
+  </nav>
+
+  <!-- Container for Landing Page -->
+  <div style="max-width: 1040px; margin: 0 auto; padding: 0 20px;">
+
+    <!-- 1. HERO SECTION -->
+    <section style="min-height: calc(85vh - 70px); display: flex; align-items: center; justify-content: space-between; gap: 40px; padding: 48px 0 60px 0; flex-wrap: wrap;">
+      
+      <!-- Left Hero Text -->
+      <div style="flex: 1 1 480px; max-width: 560px;">
+        <div style="margin-bottom: 16px;">
+          <span class="notice-pill model-active">
+            <span id="heroBadgeIcon"></span>
+            <span>Trained Multi-Horizon ML Suite (LSTM • RF • XGB)</span>
+          </span>
+        </div>
+        
+        <h1 style="font-size: clamp(38px, 6vw, 62px); font-weight: 600; line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 20px; color: #FFFFFF;">
+          Know tomorrow’s air before you breathe it.
+        </h1>
+        
+        <p style="font-size: 18px; line-height: 1.6; color: var(--text-soft); margin-bottom: 32px;">
+          An Apple-weather styled atmospheric forecasting system for Indian cities. Replaces passive retrospective monitoring with 24-hour advance hourly predictions and actionable community health windows.
+        </p>
+
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="dashboard.html" class="btn-primary">
+            <span>Launch Dashboard</span>
+            <span id="btnArrowIcon"></span>
+          </a>
+          <a href="#benchmarks" class="btn-secondary">
+            <span>View 29.5% Gain Benchmarks</span>
+          </a>
+        </div>
+
+        <div style="margin-top: 36px; display: flex; align-items: center; gap: 20px; font-size: 13px; color: var(--text-faint);">
+          <div>✓ Zero-Leakage Pipeline</div>
+          <div>✓ CPCB AQI Standards</div>
+          <div>✓ UN SDG 11.6.2</div>
+        </div>
+      </div>
+
+      <!-- Right Side: Phone Frame Mockup showing live dashboard preview -->
+      <div style="flex: 0 1 380px; width: 100%; display: flex; justify-content: center;">
+        <div class="phone-mockup">
+          <div class="phone-speaker"></div>
+
+          <!-- Inside Phone Preview Screen -->
+          <div style="padding: 28px 16px 20px 16px; background: linear-gradient(180deg, #4E9FD1 0%, #A4D9D2 100%); min-height: 520px; display: flex; flex-direction: column; justify-content: space-between;">
+            
+            <!-- Phone Top bar -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 8px;">
+              <div style="font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 4px; color: #fff;">
+                <span id="phonePinIcon"></span> Bengaluru BTM
+              </div>
+              <span class="notice-pill model-active" style="font-size: 9px; padding: 2px 8px;">LSTM Model</span>
+            </div>
+
+            <!-- Phone Hero -->
+            <div style="text-align: center; margin: 16px 0 8px 0;">
+              <div id="phoneConditionIcon" style="margin-bottom: 4px;"></div>
+              <div style="font-size: 72px; font-weight: 200; line-height: 1; letter-spacing: -0.04em;">23</div>
+              <div style="font-size: 14px; color: rgba(255,255,255,0.8); font-weight: 300;">µg/m³ PM2.5</div>
+              <div style="font-size: 20px; font-weight: 500; margin-top: 4px;">Good</div>
+              <div style="font-size: 13px; color: rgba(255,255,255,0.85);">H: 34 &nbsp;•&nbsp; L: 17</div>
+            </div>
+
+            <!-- Phone Advisory Pill -->
+            <div style="background: rgba(255,255,255,0.18); border-radius: 12px; padding: 8px 12px; font-size: 12px; margin-bottom: 12px; border-left: 3px solid var(--sun);">
+              Best outdoor window: 1 PM – 5 PM.
+            </div>
+
+            <!-- Phone Mini Hourly Strip -->
+            <div style="background: rgba(255,255,255,0.18); border-radius: 16px; padding: 10px; display: flex; justify-content: space-between;">
+              <div style="text-align: center; font-size: 11px;">
+                <div style="opacity: 0.8;">Now</div>
+                <div style="font-weight: 600; margin-top: 4px;">23</div>
+              </div>
+              <div style="text-align: center; font-size: 11px;">
+                <div style="opacity: 0.8;">1 PM</div>
+                <div style="font-weight: 600; margin-top: 4px; color: #fff;">18</div>
+              </div>
+              <div style="text-align: center; font-size: 11px;">
+                <div style="opacity: 0.8;">4 PM</div>
+                <div style="font-weight: 600; margin-top: 4px; color: #fff;">17</div>
+              </div>
+              <div style="text-align: center; font-size: 11px;">
+                <div style="opacity: 0.8;">9 PM</div>
+                <div style="font-weight: 600; margin-top: 4px;">34</div>
+              </div>
+              <div style="text-align: center; font-size: 11px;">
+                <div style="opacity: 0.8;">12 AM</div>
+                <div style="font-weight: 600; margin-top: 4px;">25</div>
+              </div>
+            </div>
+
+            <a href="dashboard.html" class="btn-primary" style="margin-top: 14px; font-size: 13px; padding: 10px; text-align: center; width: 100%;">
+              Open Full Interactive View
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 2. PROBLEM STATEMENT -->
+    <section id="problem" style="padding: 60px 0;">
+      <span class="label-caption" style="margin-bottom: 8px;">The Public Health Crisis</span>
+      <h2 style="font-size: clamp(28px, 4vw, 42px); font-weight: 600; margin-bottom: 24px;">
+        Why Retrospective AQI Fails Communities
+      </h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+        <!-- Big Stat Glass Card -->
+        <div class="glass-card" style="padding: 32px 24px; background: rgba(209, 73, 91, 0.22); border-color: rgba(209, 73, 91, 0.4);">
+          <div style="font-size: 64px; font-weight: 200; line-height: 1; color: #ff8a9a; margin-bottom: 8px;">4M+</div>
+          <div style="font-size: 18px; font-weight: 600; margin-bottom: 6px;">Premature Deaths Annually</div>
+          <p style="font-size: 14px; color: var(--text-soft); line-height: 1.5;">
+            According to WHO estimates, exposure to ambient fine particulate matter (&lt;2.5 µm) is one of the leading global environmental killers.
+          </p>
+        </div>
+
+        <!-- Problem 1 -->
+        <div class="glass-card" style="padding: 28px 24px;">
+          <div style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">The Retrospective Reporting Gap</div>
+          <p style="font-size: 14px; color: var(--text-soft); line-height: 1.6;">
+            Citizens currently learn air was toxic only after inhaling it all day. Existing government monitors publish historical averages with no advance foresight.
+          </p>
+        </div>
+
+        <!-- Problem 2 -->
+        <div class="glass-card" style="padding: 28px 24px;">
+          <div style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">Unmitigated Vulnerable Exposure</div>
+          <p style="font-size: 14px; color: var(--text-soft); line-height: 1.6;">
+            School children, elderly residents, and daily outdoor workers lack lead time to plan safe exposure windows, wear protection, or schedule outdoor activities.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. HOW IT WORKS (5 STEPS) -->
+    <section id="approach" style="padding: 60px 0;">
+      <span class="label-caption" style="margin-bottom: 8px;">System Architecture</span>
+      <h2 style="font-size: clamp(28px, 4vw, 42px); font-weight: 600; margin-bottom: 24px;">
+        How The 24-Hour Engine Works
+      </h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px;">
+        <div class="glass-card" style="padding: 20px;">
+          <div style="font-size: 12px; font-weight: 700; color: var(--sun); margin-bottom: 4px;">STEP 01</div>
+          <div style="font-size: 18px; font-weight: 600; margin-bottom: 6px;">Ingest</div>
+          <p style="font-size: 13px; color: var(--text-soft); line-height: 1.5;">
+            Authentic measurements ingested hourly across 647 Indian CAAQM stations from XKDR API.
+          </p>
+        </div>
+
+        <div class="glass-card" style="padding: 20px;">
+          <div style="font-size: 12px; font-weight: 700; color: var(--sun); margin-bottom: 4px;">STEP 02</div>
+          <div style="font-size: 18px; font-weight: 600; margin-bottom: 6px;">Clean</div>
+          <p style="font-size: 13px; color: var(--text-soft); line-height: 1.5;">
+            Causal forward-fill & expanding medians. Strictly zero future lookahead or data leakage.
+          </p>
+        </div>
+
+        <div class="glass-card" style="padding: 20px;">
+          <div style="font-size: 12px; font-weight: 700; color: var(--sun); margin-bottom: 4px;">STEP 03</div>
+          <div style="font-size: 18px; font-weight: 600; margin-bottom: 6px;">Features</div>
+          <p style="font-size: 13px; color: var(--text-soft); line-height: 1.5;">
+            Trigonometric time cycles, 8 historical lag horizons, and past 6h/24h rolling statistics.
+          </p>
+        </div>
+
+        <div class="glass-card" style="padding: 20px;">
+          <div style="font-size: 12px; font-weight: 700; color: var(--sun); margin-bottom: 4px;">STEP 04</div>
+          <div style="font-size: 18px; font-weight: 600; margin-bottom: 6px;">Forecast</div>
+          <p style="font-size: 13px; color: var(--text-soft); line-height: 1.5;">
+            PyTorch Sequential LSTM predicts all 24 future horizons simultaneously without recursive decay.
+          </p>
+        </div>
+
+        <div class="glass-card" style="padding: 20px;">
+          <div style="font-size: 12px; font-weight: 700; color: var(--sun); margin-bottom: 4px;">STEP 05</div>
+          <div style="font-size: 18px; font-weight: 600; margin-bottom: 6px;">Advise</div>
+          <p style="font-size: 13px; color: var(--text-soft); line-height: 1.5;">
+            CPCB category translation with automated best exposure window & peak risk alerts.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. DATA SECTION -->
+    <section id="data" style="padding: 60px 0;">
+      <span class="label-caption" style="margin-bottom: 8px;">Authentic Datasets</span>
+      <h2 style="font-size: clamp(28px, 4vw, 42px); font-weight: 600; margin-bottom: 24px;">
+        Curated Time-Series Foundation
+      </h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;">
+        <div class="glass-tile">
+          <span class="label-caption">Observations</span>
+          <div class="tile-value">16,248+</div>
+          <div class="tile-sub">Continuous hourly timestamps</div>
+        </div>
+
+        <div class="glass-tile">
+          <span class="label-caption">National Stations</span>
+          <div class="tile-value">647</div>
+          <div class="tile-sub">Central & State CAAQM sensors</div>
+        </div>
+
+        <div class="glass-tile">
+          <span class="label-caption">Parameters</span>
+          <div class="tile-value">10</div>
+          <div class="tile-sub">Pollutants & weather covariates</div>
+        </div>
+
+        <div class="glass-tile">
+          <span class="label-caption">Time Grid</span>
+          <div class="tile-value">IST (UTC+5:30)</div>
+          <div class="tile-sub">Zero missing intervals</div>
+        </div>
+      </div>
+
+      <div class="glass-card" style="margin-top: 16px; padding: 18px 24px; font-size: 13px; color: var(--text-soft);">
+        <strong>Data Sources:</strong> XKDR Forum India Air Quality Platform compiling CPCB/KSPCB CAAQM networks (2025–2026), and UCI Machine Learning Air Quality Benchmark Archive.
+      </div>
+    </section>
+
+    <!-- 5. BENCHMARKS & EVALUATION -->
+    <section id="benchmarks" style="padding: 60px 0;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px; margin-bottom: 24px;">
+        <div>
+          <span class="label-caption" style="margin-bottom: 8px;">Empirical Verification</span>
+          <h2 style="font-size: clamp(28px, 4vw, 42px); font-weight: 600;">
+            Model Superiority Over Persistence
+          </h2>
+        </div>
+        <span class="notice-pill model-active" style="font-size: 12px; padding: 6px 14px;">
+          ★ 29.5% RMSE Reduction Achieved
+        </span>
+      </div>
+
+      <div style="overflow-x: auto;">
+        <table style="width: 100%; border-collapse: separate; border-spacing: 0; background: var(--glass); backdrop-filter: blur(20px); border-radius: var(--radius-lg); border: 1px solid var(--glass-border); overflow: hidden; font-size: 14px;">
+          <thead>
+            <tr style="background: rgba(255,255,255,0.12); text-align: left;">
+              <th style="padding: 16px 20px;">Architecture</th>
+              <th style="padding: 16px 20px;">Horizon Strategy</th>
+              <th style="padding: 16px 20px;">Test RMSE (µg/m³)</th>
+              <th style="padding: 16px 20px;">Test MAE (µg/m³)</th>
+              <th style="padding: 16px 20px;">R² Score</th>
+              <th style="padding: 16px 20px;">Gain vs Baseline</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+              <td style="padding: 14px 20px; font-weight: 600; color: var(--text-soft);">Persistence Baseline</td>
+              <td style="padding: 14px 20px;">Diurnal (\(y_{t+h-24}\))</td>
+              <td style="padding: 14px 20px;">22.26</td>
+              <td style="padding: 14px 20px;">4.21</td>
+              <td style="padding: 14px 20px;">-1.017</td>
+              <td style="padding: 14px 20px; color: var(--text-faint);">0.0% (Reference)</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+              <td style="padding: 14px 20px; font-weight: 600;">Random Forest</td>
+              <td style="padding: 14px 20px;">Direct Multi-Output</td>
+              <td style="padding: 14px 20px;">15.78</td>
+              <td style="padding: 14px 20px;">4.02</td>
+              <td style="padding: 14px 20px;">-0.013</td>
+              <td style="padding: 14px 20px; color: #22c55e; font-weight: 600;">+29.1%</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+              <td style="padding: 14px 20px; font-weight: 600;">XGBoost Regressor</td>
+              <td style="padding: 14px 20px;">Direct Multi-Output</td>
+              <td style="padding: 14px 20px;">15.86</td>
+              <td style="padding: 14px 20px;">4.54</td>
+              <td style="padding: 14px 20px;">-0.023</td>
+              <td style="padding: 14px 20px; color: #22c55e; font-weight: 600;">+28.7%</td>
+            </tr>
+            <tr style="background: rgba(34, 197, 94, 0.15);">
+              <td style="padding: 14px 20px; font-weight: 700; color: #22c55e;">★ PyTorch LSTM</td>
+              <td style="padding: 14px 20px; font-weight: 600;">Sequential Multi-Horizon</td>
+              <td style="padding: 14px 20px; font-weight: 700; color: #22c55e;">15.69</td>
+              <td style="padding: 14px 20px;">4.74</td>
+              <td style="padding: 14px 20px; font-weight: 700; color: #22c55e;">-0.001</td>
+              <td style="padding: 14px 20px; font-weight: 700; color: #22c55e;">+29.5% (Best)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size: 12px; color: var(--text-faint); margin-top: 10px;">
+        Evaluated on 2,427 contiguous chronological holdout hours (Nov 2026). Zero future information leakage.
+      </p>
+    </section>
+
+    <!-- 6. TEAM & INSTITUTION -->
+    <section id="team" style="padding: 60px 0;">
+      <span class="label-caption" style="margin-bottom: 8px;">Institutional Deliverables</span>
+      <h2 style="font-size: clamp(28px, 4vw, 42px); font-weight: 600; margin-bottom: 24px;">
+        Project Team & DSCE Faculty
+      </h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;">
+        <div class="glass-card" style="padding: 24px;">
+          <div style="font-weight: 700; font-size: 18px; margin-bottom: 4px;">Shourya</div>
+          <div style="font-size: 13px; color: var(--sun); font-weight: 600; margin-bottom: 8px;">Team Lead (SPOC)</div>
+          <div style="font-size: 12px; color: var(--text-soft); line-height: 1.5;">
+            USN: 1DS25AI098<br>
+            Architecture design, ML benchmarking & full-stack integration.
+          </div>
+        </div>
+
+        <div class="glass-card" style="padding: 24px;">
+          <div style="font-weight: 700; font-size: 18px; margin-bottom: 4px;">Pravar Singh</div>
+          <div style="font-size: 13px; color: var(--sun); font-weight: 600; margin-bottom: 8px;">Team Member</div>
+          <div style="font-size: 12px; color: var(--text-soft); line-height: 1.5;">
+            USN: 1DS25AI074<br>
+            Data acquisition, XKDR API pipeline & causal cleaning.
+          </div>
+        </div>
+
+        <div class="glass-card" style="padding: 24px;">
+          <div style="font-weight: 700; font-size: 18px; margin-bottom: 4px;">Shubham Pant</div>
+          <div style="font-size: 13px; color: var(--sun); font-weight: 600; margin-bottom: 8px;">Team Member</div>
+          <div style="font-size: 12px; color: var(--text-soft); line-height: 1.5;">
+            USN: 1DS25AI103<br>
+            Multi-horizon feature engineering & persistence baseline.
+          </div>
+        </div>
+
+        <div class="glass-card" style="padding: 24px;">
+          <div style="font-weight: 700; font-size: 18px; margin-bottom: 4px;">Shubham Sharma</div>
+          <div style="font-size: 13px; color: var(--sun); font-weight: 600; margin-bottom: 8px;">Team Member</div>
+          <div style="font-size: 12px; color: var(--text-soft); line-height: 1.5;">
+            USN: 1DS25AI104<br>
+            CPCB health advisory engine & evaluation metrics.
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card" style="margin-top: 16px; padding: 20px 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+        <div>
+          <div style="font-size: 15px; font-weight: 600;">Project Guide: Prof. Ensteih Silvia</div>
+          <div style="font-size: 13px; color: var(--text-soft);">Department of Artificial Intelligence and Machine Learning</div>
+        </div>
+        <div style="font-size: 13px; color: var(--text-faint);">
+          Dayananda Sagar College of Engineering • AI-B, Batch B-12
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. LIMITATIONS & FUTURE SCOPE -->
+    <section style="padding: 40px 0 80px 0;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+        <div class="glass-card" style="padding: 28px;">
+          <span class="label-caption" style="margin-bottom: 8px;">Academic Honesty</span>
+          <h3 style="font-size: 20px; font-weight: 600; margin-bottom: 12px;">Current Limitations</h3>
+          <ul style="font-size: 14px; color: var(--text-soft); line-height: 1.7; padding-left: 20px;">
+            <li>Sensor dropout and missing values require expanding causal imputation.</li>
+            <li>Colab free-tier compute bounds deep learning batch size and epoch depth.</li>
+            <li>Localized micro-meteorological anomalies depend on accurate wind telemetry.</li>
+          </ul>
+        </div>
+
+        <div class="glass-card" style="padding: 28px;">
+          <span class="label-caption" style="margin-bottom: 8px;">Expansion Roadmap</span>
+          <h3 style="font-size: 20px; font-weight: 600; margin-bottom: 12px;">Future Enhancements</h3>
+          <ul style="font-size: 14px; color: var(--text-soft); line-height: 1.7; padding-left: 20px;">
+            <li>Direct WhatsApp & SMS community alerts for local school districts.</li>
+            <li>Ward-level spatial interpolation across Bengaluru wards using Leaflet.js.</li>
+            <li>Continuous auto-retraining pipeline on new daily CPCB hourly dumps.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer style="padding: 40px 0; border-top: 1px solid rgba(255, 255, 255, 0.15); text-align: center;">
+      <div style="font-size: 15px; font-weight: 600; margin-bottom: 8px;">PM2.5-next24hours • Community Project (BCP308)</div>
+      <p style="font-size: 13px; color: var(--text-soft); max-width: 600px; margin: 0 auto 12px auto;">
+        Aligned with UN Sustainable Development Goal 11: Sustainable Cities and Communities (Target 11.6, Indicator 11.6.2).
+      </p>
+      <div style="font-size: 12px; color: var(--text-faint);">
+        Licensed under the MIT License • Built with Inter, Lucide & Vanilla Web Standards
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/aqi.js"></script>
+  <script src="js/landing.js"></script>
+</body>
+</html>

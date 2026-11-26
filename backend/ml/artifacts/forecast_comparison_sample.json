@@ -8,7 +8,7 @@
       "persistence": 20.4,
       "random_forest": 17.3,
       "xgboost": 18.6,
-      "lstm": 23.3
+      "lstm": 23.2
     },
     {
       "hour": 2,
@@ -17,7 +17,7 @@
       "persistence": 18.5,
       "random_forest": 17.6,
       "xgboost": 19.2,
-      "lstm": 23.3
+      "lstm": 23.2
     },
     {
       "hour": 3,
@@ -26,7 +26,7 @@
       "persistence": 17.6,
       "random_forest": 18.3,
       "xgboost": 22.2,
-      "lstm": 23.4
+      "lstm": 23.0
     },
     {
       "hour": 4,
@@ -35,7 +35,7 @@
       "persistence": 17.0,
       "random_forest": 19.5,
       "xgboost": 21.1,
-      "lstm": 23.3
+      "lstm": 23.5
     },
     {
       "hour": 5,
@@ -53,7 +53,7 @@
       "persistence": 18.1,
       "random_forest": 21.4,
       "xgboost": 26.6,
-      "lstm": 23.5
+      "lstm": 23.6
     },
     {
       "hour": 7,
@@ -62,7 +62,7 @@
       "persistence": 17.4,
       "random_forest": 21.1,
       "xgboost": 31.7,
-      "lstm": 23.6
+      "lstm": 23.5
     },
     {
       "hour": 8,
@@ -71,7 +71,7 @@
       "persistence": 21.1,
       "random_forest": 20.7,
       "xgboost": 39.6,
-      "lstm": 23.7
+      "lstm": 23.4
     },
     {
       "hour": 9,
@@ -80,7 +80,7 @@
       "persistence": 18.3,
       "random_forest": 20.8,
       "xgboost": 28.9,
-      "lstm": 23.5
+      "lstm": 23.6
     },
     {
       "hour": 10,
@@ -89,7 +89,7 @@
       "persistence": 16.9,
       "random_forest": 20.9,
       "xgboost": 25.7,
-      "lstm": 23.6
+      "lstm": 23.7
     },
     {
       "hour": 11,
@@ -98,7 +98,7 @@
       "persistence": 16.6,
       "random_forest": 21.1,
       "xgboost": 24.9,
-      "lstm": 23.7
+      "lstm": 23.6
     },
     {
       "hour": 12,
@@ -107,7 +107,7 @@
       "persistence": 16.6,
       "random_forest": 20.8,
       "xgboost": 34.4,
-      "lstm": 23.9
+      "lstm": 23.4
     },
     {
       "hour": 13,
@@ -116,7 +116,7 @@
       "persistence": 16.2,
       "random_forest": 20.3,
       "xgboost": 25.1,
-      "lstm": 23.9
+      "lstm": 23.6
     },
     {
       "hour": 14,
@@ -134,7 +134,7 @@
       "persistence": 15.8,
       "random_forest": 19.5,
       "xgboost": 24.9,
-      "lstm": 23.9
+      "lstm": 23.7
     },
     {
       "hour": 16,
@@ -143,7 +143,7 @@
       "persistence": 16.1,
       "random_forest": 20.4,
       "xgboost": 26.7,
-      "lstm": 23.8
+      "lstm": 23.7
     },
     {
       "hour": 17,
@@ -152,7 +152,7 @@
       "persistence": 16.4,
       "random_forest": 21.4,
       "xgboost": 28.2,
-      "lstm": 24.0
+      "lstm": 23.8
     },
     {
       "hour": 18,
@@ -170,7 +170,7 @@
       "persistence": 16.3,
       "random_forest": 21.9,
       "xgboost": 31.0,
-      "lstm": 24.0
+      "lstm": 24.1
     },
     {
       "hour": 20,
@@ -179,7 +179,7 @@
       "persistence": 16.8,
       "random_forest": 22.0,
       "xgboost": 40.1,
-      "lstm": 23.9
+      "lstm": 23.7
     },
     {
       "hour": 21,
@@ -188,7 +188,7 @@
       "persistence": 16.5,
       "random_forest": 22.6,
       "xgboost": 36.4,
-      "lstm": 23.8
+      "lstm": 24.0
     },
     {
       "hour": 22,
@@ -197,7 +197,7 @@
       "persistence": 16.2,
       "random_forest": 24.0,
       "xgboost": 43.9,
-      "lstm": 24.1
+      "lstm": 23.9
     },
     {
       "hour": 23,
@@ -206,7 +206,7 @@
       "persistence": 16.7,
       "random_forest": 26.5,
       "xgboost": 34.8,
-      "lstm": 23.7
+      "lstm": 23.6
     },
     {
       "hour": 24,
@@ -215,7 +215,7 @@
       "persistence": 17.4,
       "random_forest": 28.6,
       "xgboost": 28.3,
-      "lstm": 23.6
+      "lstm": 23.8
     }
   ]
 }

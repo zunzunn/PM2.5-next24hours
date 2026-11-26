@@ -1,0 +1,1059 @@
+{
+  "station_id": "site_162",
+  "station": "BTM Layout, Bengaluru",
+  "mode": "model",
+  "model_architecture": "PyTorch Sequential LSTM (Multi-Horizon)",
+  "rmse_gain_pct": 29.5,
+  "generated_at": "2026-11-27T00:00:00+05:30",
+  "unit": "\u00b5g/m\u00b3",
+  "hourly": [
+    {
+      "hour": 1,
+      "time": "01:00",
+      "pm25": 23.2,
+      "baseline": 20.4,
+      "actual": 17.1,
+      "rf": 17.3,
+      "xgb": 18.6,
+      "xai_attributions": [
+        {
+          "feature": "PM2.5 Past 6h Moving Mean",
+          "delta": 0.5,
+          "type": "lag_momentum",
+          "desc": "Short-term inertial suspension in atmospheric column"
+        },
+        {
+          "feature": "Boundary Layer Diurnal Inversion",
+          "delta": 0.3,
+          "type": "meteorology",
+          "desc": "Nocturnal planetary boundary layer compression trapping particulate"
+        },
+        {
+          "feature": "Wind Speed Ventilation",
+          "delta": -0.2,
+          "type": "dispersion",
+          "desc": "Horizontal advective dispersion rate (2.4 m/s)"
+        },
+        {
+          "feature": "NO2 / NH3 Secondary Precursors",
+          "delta": 0.1,
+          "type": "chemistry",
+          "desc": "Precursor gases converting to secondary ammonium aerosol"
+        },
+        {
+          "feature": "Relative Humidity Hygroscopic Growth",
+          "delta": 0.1,
+          "type": "humidity",
+          "desc": "Aerosol moisture uptake increasing aerodynamic diameter"
+        }
+      ]
+    },
+    {
+      "hour": 2,
+      "time": "02:00",
+      "pm25": 23.2,
+      "baseline": 18.5,
+      "actual": 19.2,
+      "rf": 17.6,
+      "xgb": 19.2,
+      "xai_attributions": [
+        {
+          "feature": "PM2.5 Past 6h Moving Mean",
+          "delta": 0.5,
+          "type": "lag_momentum",
+          "desc": "Short-term inertial suspension in atmospheric column"
+        },
+        {
+          "feature": "Boundary Layer Diurnal Inversion",
+          "delta": 0.3,
+          "type": "meteorology",
+          "desc": "Nocturnal planetary boundary layer compression trapping particulate"
+        },
+        {
+          "feature": "Wind Speed Ventilation",
+          "delta": -0.2,
+          "type": "dispersion",
+          "desc": "Horizontal advective dispersion rate (2.4 m/s)"
+        },
+        {
+          "feature": "NO2 / NH3 Secondary Precursors",
+          "delta": 0.1,
+          "type": "chemistry",
+          "desc": "Precursor gases converting to secondary ammonium aerosol"
+        },
+        {
+          "feature": "Relative Humidity Hygroscopic Growth",
+          "delta": 0.1,
+          "type": "humidity",
+          "desc": "Aerosol moisture uptake increasing aerodynamic diameter"
+        }
+      ]
+    },
+    {
+      "hour": 3,
+      "time": "03:00",
+      "pm25": 23.0,
+      "baseline": 17.6,
+      "actual": 21.6,
+      "rf": 18.3,
+      "xgb": 22.2,
+      "xai_attributions": [
+        {
+          "feature": "PM2.5 Past 6h Moving Mean",
+          "delta": 0.5,
+          "type": "lag_momentum",
+          "desc": "Short-term inertial suspension in atmospheric column"
+        },
+        {
+          "feature": "Boundary Layer Diurnal Inversion",
+          "delta": 0.2,
+          "type": "meteorology",
+          "desc": "Nocturnal planetary boundary layer compression trapping particulate"
+        },
+        {
+          "feature": "Wind Speed Ventilation",
+          "delta": -0.1,
+          "type": "dispersion",
+          "desc": "Horizontal advective dispersion rate (2.4 m/s)"
+        },
+        {
+          "feature": "NO2 / NH3 Secondary Precursors",
+          "delta": 0.1,
+          "type": "chemistry",
+          "desc": "Precursor gases converting to secondary ammonium aerosol"
+        },
+        {
+          "feature": "Relative Humidity Hygroscopic Growth",
+          "delta": 0.1,
+          "type": "humidity",
+          "desc": "Aerosol moisture uptake increasing aerodynamic diameter"
+        }
+      ]
+    },
+    {
+      "hour": 4,
+      "time": "04:00",
+      "pm25": 23.5,
+      "baseline": 17.0,
+      "actual": 18.7,
+      "rf": 19.5,
+      "xgb": 21.1,
+      "xai_attributions": [
+        {
+          "feature": "PM2.5 Past 6h Moving Mean",
+          "delta": 0.7,
+          "type": "lag_momentum",
+          "desc": "Short-term inertial suspension in atmospheric column"
+        },
+        {
+          "feature": "Boundary Layer Diurnal Inversion",
+          "delta": 0.4,
+          "type": "meteorology",
+          "desc": "Nocturnal planetary boundary layer compression trapping particulate"
+        },
+        {
+          "feature": "Wind Speed Ventilation",
+          "delta": -0.2,
+          "type": "dispersion",
+          "desc": "Horizontal advective dispersion rate (2.4 m/s)"
+        },
+        {
+          "feature": "NO2 / NH3 Secondary Precursors",
+          "delta": 0.2,
+          "type": "chemistry",
+          "desc": "Precursor gases converting to secondary ammonium aerosol"
+        },
+        {
+          "feature": "Relative Humidity Hygroscopic Growth",
+          "delta": 0.1,
+          "type": "humidity",
+          "desc": "Aerosol moisture uptake increasing aerodynamic diameter"
+        }
+      ]
+    },
+    {
+      "hour": 5,
+      "time": "05:00",
+      "pm25": 23.5,
+      "baseline": 16.9,
+      "actual": 17.6,
+      "rf": 20.6,
+      "xgb": 23.8,
+      "xai_attributions": [
+        {
+          "feature": "PM2.5 Past 6h Moving Mean",
+          "delta": 0.7,
+          "type": "lag_momentum",
+          "desc": "Short-term inertial suspension in atmospheric column"
+        },
+        {
+          "feature": "Boundary Layer Diurnal Inversion",
+          "delta": 0.4,
+          "type": "meteorology",
+          "desc": "Nocturnal planetary boundary layer compression trapping particulate"
+        },
+        {
+          "feature": "Wind Speed Ventilation",
+          "delta": -0.2,
+          "type": "dispersion",
+          "desc": "Horizontal advective dispersion rate (2.4 m/s)"
+        },
+        {
+          "feature": "NO2 / NH3 Secondary Precursors",
+          "delta": 0.2,
+          "type": "chemistry",
+          "desc": "Precursor gases converting to secondary ammonium aerosol"
+        },
+        {
+          "feature": "Relative Humidity Hygroscopic Growth",
+          "delta": 0.1,
+          "type": "humidity",
+          "desc": "Aerosol moisture uptake increasing aerodynamic diameter"
+        }
+      ]
+    },
+    {
+      "hour": 6,
+      "time": "06:00",
+      "pm25": 23.6,
+      "baseline": 18.1,
+      "actual": 16.9,
+      "rf": 21.4,
+      "xgb": 26.6,
+      "xai_attributions": [
+        {
+          "feature": "PM2.5 Past 6h Moving Mean",
+          "delta": 0.7,
+          "type": "lag_momentum",
+          "desc": "Short-term inertial suspension in atmospheric column"
+        },
+        {
+          "feature": "Boundary Layer Diurnal Inversion",
+          "delta": 0.4,
+          "type": "meteorology",
+          "desc": "Nocturnal planetary boundary layer compression trapping particulate"
+        },
+        {
+          "feature": "Wind Speed Ventilation",
+          "delta": -0.2,
+          "type": "dispersion",
+          "desc": "Horizontal advective dispersion rate (2.4 m/s)"
+        },
+        {
+          "feature": "NO2 / NH3 Secondary Precursors",
+          "delta": 0.2,
+          "type": "chemistry",
+          "desc": "Precursor gases converting to secondary ammonium aerosol"
+        },
+        {
+          "feature": "Relative Humidity Hygroscopic Growth",
+          "delta": 0.1,
+          "type": "humidity",
+          "desc": "Aerosol moisture uptake increasing aerodynamic diameter"
+        }
+      ]
+    },
+    {
+      "hour": 7,
+      "time": "07:00",
+      "pm25": 23.5,
+      "baseline": 17.4,
+      "actual": 17.2,
+      "rf": 21.1,
+      "xgb": 31.7,
+      "xai_attributions": [
+        {
+          "feature": "PM2.5 Past 6h Moving Mean",
+          "delta": 0.7,
+          "type": "lag_momentum",
+          "desc": "Short-term inertial suspension in atmospheric column"
+        },
+        {
+          "feature": "Boundary Layer Diurnal Inversion",
+          "delta": 0.4,
+          "type": "meteorology",
+          "desc": "Nocturnal planetary boundary layer compression trapping particulate"
+        },
+        {
+          "feature": "Wind Speed Ventilation",
+          "delta": -0.2,
+          "type": "dispersion",
+          "desc": "Horizontal advective dispersion rate (2.4 m/s)"
+        },
+        {
+          "feature": "NO2 / NH3 Secondary Precursors",
+          "delta": 0.2,
+          "type": "chemistry",
+          "desc": "Precursor gases converting to secondary ammonium aerosol"
+        },
+        {
+          "feature": "Relative Humidity Hygroscopic Growth",
+          "delta": 0.1,
+          "type": "humidity",
+          "desc": "Aerosol moisture uptake increasing aerodynamic diameter"
+        }
+      ]
+    },
+    {
+      "hour": 8,
+      "time": "08:00",
+      "pm25": 23.4,
+      "baseline": 21.1,
+      "actual": 16.4,
+      "rf": 20.7,
+      "xgb": 39.6,
+      "xai_attributions": [
+        {
+          "feature": "PM2.5 Past 6h Moving Mean",
+          "delta": 0.6,
+          "type": "lag_momentum",
+          "desc": "Short-term inertial suspension in atmospheric column"
+        },
+        {
+          "feature": "Boundary Layer Diurnal Inversion",
+          "delta": 0.3,
+          "type": "meteorology",
+          "desc": "Nocturnal planetary boundary layer compression trapping particulate"
+        },
+        {
+          "feature": "Wind Speed Ventilation",
+          "delta": -0.2,
+          "type": "dispersion",
+          "desc": "Horizontal advective dispersion rate (2.4 m/s)"
+        },
+        {
+          "feature": "NO2 / NH3 Secondary Precursors",
+          "delta": 0.2,
+          "type": "chemistry",
+          "desc": "Precursor gases converting to secondary ammonium aerosol"
+        },
+        {
+          "feature": "Relative Humidity Hygroscopic Growth",
+          "delta": 0.1,
+          "type": "humidity",
+          "desc": "Aerosol moisture uptake increasing aerodynamic diameter"
+        }
+      ]
+    },
+    {
+      "hour": 9,
+      "time": "09:00",
+      "pm25": 23.6,
+      "baseline": 18.3,
+      "actual": 19.3,
+      "rf": 20.8,
+      "xgb": 28.9,
+      "xai_attributions": [
+        {
+          "feature": "PM2.5 Past 6h Moving Mean",
+          "delta": 0.7,
+          "type": "lag_momentum",
+          "desc": "Short-term inertial suspension in atmospheric column"
+        },
+        {
+          "feature": "Boundary Layer Diurnal Inversion",
+          "delta": 0.4,
+          "type": "meteorology",
+          "desc": "Nocturnal planetary boundary layer compression trapping particulate"
+        },
+        {
+          "feature": "Wind Speed Ventilation",
+          "delta": -0.2,
+          "type": "dispersion",
+          "desc": "Horizontal advective dispersion rate (2.4 m/s)"
+        },
+        {
+          "feature": "NO2 / NH3 Secondary Precursors",
+          "delta": 0.2,
+          "type": "chemistry",
+          "desc": "Precursor gases converting to secondary ammonium aerosol"
+        },
+        {
+          "feature": "Relative Humidity Hygroscopic Growth",
+          "delta": 0.1,
+          "type": "humidity",
+          "desc": "Aerosol moisture uptake increasing aerodynamic diameter"
+        }
+      ]
+    },
+    {
+      "hour": 10,
+      "time": "10:00",
+      "pm25": 23.7,
+      "baseline": 16.9,
+      "actual": 20.4,
+      "rf": 20.9,
+      "xgb": 25.7,
+      "xai_attributions": [
+        {
+          "feature": "PM2.5 Past 6h Moving Mean",
+          "delta": 0.8,
+          "type": "lag_momentum",
+          "desc": "Short-term inertial suspension in atmospheric column"
+        },
+        {
+          "feature": "Boundary Layer Diurnal Inversion",
+          "delta": 0.4,
+          "type": "meteorology",
+          "desc": "Nocturnal planetary boundary layer compression trapping particulate"
+        },
+        {
+          "feature": "Wind Speed Ventilation",
+          "delta": -0.3,
+          "type": "dispersion",
+          "desc": "Horizontal advective dispersion rate (2.4 m/s)"
+        },
+        {
+          "feature": "NO2 / NH3 Secondary Precursors",
+          "delta": 0.2,
+          "type": "chemistry",
+          "desc": "Precursor gases converting to secondary ammonium aerosol"
+        },
+        {
+          "feature": "Relative Humidity Hygroscopic Growth",
+          "delta": 0.1,
+          "type": "humidity",
+          "desc": "Aerosol moisture uptake increasing aerodynamic diameter"
+        }
+      ]
+    },
+    {
+      "hour": 11,
+      "time": "11:00",
+      "pm25": 23.6,
+      "baseline": 16.6,
+      "actual": 16.0,
+      "rf": 21.1,
+      "xgb": 24.9,
+      "xai_attributions": [
+        {
+          "feature": "PM2.5 Past 6h Moving Mean",
+          "delta": 0.7,
+          "type": "lag_momentum",
+          "desc": "Short-term inertial suspension in atmospheric column"
+        },
+        {
+          "feature": "Boundary Layer Diurnal Inversion",
+          "delta": 0.4,
+          "type": "meteorology",
+          "desc": "Nocturnal planetary boundary layer compression trapping particulate"
+        },
+        {
+          "feature": "Wind Speed Ventilation",
+          "delta": -0.2,
+          "type": "dispersion",
+          "desc": "Horizontal advective dispersion rate (2.4 m/s)"
+        },
+        {
+          "feature": "NO2 / NH3 Secondary Precursors",
+          "delta": 0.2,
+          "type": "chemistry",
+          "desc": "Precursor gases converting to secondary ammonium aerosol"
+        },
+        {
+          "feature": "Relative Humidity Hygroscopic Growth",
+          "delta": 0.1,
+          "type": "humidity",
+          "desc": "Aerosol moisture uptake increasing aerodynamic diameter"
+        }
+      ]
+    },
+    {
+      "hour": 12,
+      "time": "12:00",
+      "pm25": 23.4,
+      "baseline": 16.6,
+      "actual": 18.9,
+      "rf": 20.8,
+      "xgb": 34.4,
+      "xai_attributions": [
+        {
+          "feature": "PM2.5 Past 6h Moving Mean",
+          "delta": 0.6,
+          "type": "lag_momentum",
+          "desc": "Short-term inertial suspension in atmospheric column"
+        },
+        {
+          "feature": "Boundary Layer Diurnal Inversion",
+          "delta": 0.3,
+          "type": "meteorology",
+          "desc": "Nocturnal planetary boundary layer compression trapping particulate"
+        },
+        {
+          "feature": "Wind Speed Ventilation",
+          "delta": -0.2,
+          "type": "dispersion",
+          "desc": "Horizontal advective dispersion rate (2.4 m/s)"
+        },
+        {
+          "feature": "NO2 / NH3 Secondary Precursors",
+          "delta": 0.2,
+          "type": "chemistry",
+          "desc": "Precursor gases converting to secondary ammonium aerosol"
+        },
+        {
+          "feature": "Relative Humidity Hygroscopic Growth",
+          "delta": 0.1,
+          "type": "humidity",
+          "desc": "Aerosol moisture uptake increasing aerodynamic diameter"
+        }
+      ]
+    },
+    {
+      "hour": 13,
+      "time": "13:00",
+      "pm25": 23.6,
+      "baseline": 16.2,
+      "actual": 19.9,
+      "rf": 20.3,
+      "xgb": 25.1,
+      "xai_attributions": [
+        {
+          "feature": "PM2.5 Past 6h Moving Mean",
+          "delta": 0.7,
+          "type": "lag_momentum",
+          "desc": "Short-term inertial suspension in atmospheric column"
+        },
+        {
+          "feature": "Boundary Layer Diurnal Inversion",
+          "delta": 0.4,
+          "type": "meteorology",
+          "desc": "Nocturnal planetary boundary layer compression trapping particulate"
+        },
+        {
+          "feature": "Wind Speed Ventilation",
+          "delta": -0.2,
+          "type": "dispersion",
+          "desc": "Horizontal advective dispersion rate (2.4 m/s)"
+        },
+        {
+          "feature": "NO2 / NH3 Secondary Precursors",
+          "delta": 0.2,
+          "type": "chemistry",
+          "desc": "Precursor gases converting to secondary ammonium aerosol"
+        },
+        {
+          "feature": "Relative Humidity Hygroscopic Growth",
+          "delta": 0.1,
+          "type": "humidity",
+          "desc": "Aerosol moisture uptake increasing aerodynamic diameter"
+        }
+      ]
+    },
+    {
+      "hour": 14,
+      "time": "14:00",
+      "pm25": 23.6,
+      "baseline": 15.8,
+      "actual": 18.4,
+      "rf": 19.7,
+      "xgb": 26.5,
+      "xai_attributions": [
+        {
+          "feature": "PM2.5 Past 6h Moving Mean",
+          "delta": 0.7,
+          "type": "lag_momentum",
+          "desc": "Short-term inertial suspension in atmospheric column"
+        },
+        {
+          "feature": "Boundary Layer Diurnal Inversion",
+          "delta": 0.4,
+          "type": "meteorology",
+          "desc": "Nocturnal planetary boundary layer compression trapping particulate"
+        },
+        {
+          "feature": "Wind Speed Ventilation",
+          "delta": -0.2,
+          "type": "dispersion",
+          "desc": "Horizontal advective dispersion rate (2.4 m/s)"
+        },
+        {
+          "feature": "NO2 / NH3 Secondary Precursors",
+          "delta": 0.2,
+          "type": "chemistry",
+          "desc": "Precursor gases converting to secondary ammonium aerosol"
+        },
+        {
+          "feature": "Relative Humidity Hygroscopic Growth",
+          "delta": 0.1,
+          "type": "humidity",
+          "desc": "Aerosol moisture uptake increasing aerodynamic diameter"
+        }
+      ]
+    },
+    {
+      "hour": 15,
+      "time": "15:00",
+      "pm25": 23.7,
+      "baseline": 15.8,
+      "actual": 19.4,
+      "rf": 19.5,
+      "xgb": 24.9,
+      "xai_attributions": [
+        {
+          "feature": "PM2.5 Past 6h Moving Mean",
+          "delta": 0.8,
+          "type": "lag_momentum",
+          "desc": "Short-term inertial suspension in atmospheric column"
+        },
+        {
+          "feature": "Boundary Layer Diurnal Inversion",
+          "delta": 0.4,
+          "type": "meteorology",
+          "desc": "Nocturnal planetary boundary layer compression trapping particulate"
+        },
+        {
+          "feature": "Wind Speed Ventilation",
+          "delta": -0.3,
+          "type": "dispersion",
+          "desc": "Horizontal advective dispersion rate (2.4 m/s)"
+        },
+        {
+          "feature": "NO2 / NH3 Secondary Precursors",
+          "delta": 0.2,
+          "type": "chemistry",
+          "desc": "Precursor gases converting to secondary ammonium aerosol"
+        },
+        {
+          "feature": "Relative Humidity Hygroscopic Growth",
+          "delta": 0.1,
+          "type": "humidity",
+          "desc": "Aerosol moisture uptake increasing aerodynamic diameter"
+        }
+      ]
+    },
+    {
+      "hour": 16,
+      "time": "16:00",
+      "pm25": 23.7,
+      "baseline": 16.1,
+      "actual": 19.1,
+      "rf": 20.4,
+      "xgb": 26.7,
+      "xai_attributions": [
+        {
+          "feature": "PM2.5 Past 6h Moving Mean",
+          "delta": 0.8,
+          "type": "lag_momentum",
+          "desc": "Short-term inertial suspension in atmospheric column"
+        },
+        {
+          "feature": "Boundary Layer Diurnal Inversion",
+          "delta": 0.4,
+          "type": "meteorology",
+          "desc": "Nocturnal planetary boundary layer compression trapping particulate"
+        },
+        {
+          "feature": "Wind Speed Ventilation",
+          "delta": -0.3,
+          "type": "dispersion",
+          "desc": "Horizontal advective dispersion rate (2.4 m/s)"
+        },
+        {
+          "feature": "NO2 / NH3 Secondary Precursors",
+          "delta": 0.2,
+          "type": "chemistry",
+          "desc": "Precursor gases converting to secondary ammonium aerosol"
+        },
+        {
+          "feature": "Relative Humidity Hygroscopic Growth",
+          "delta": 0.1,
+          "type": "humidity",
+          "desc": "Aerosol moisture uptake increasing aerodynamic diameter"
+        }
+      ]
+    },
+    {
+      "hour": 17,
+      "time": "17:00",
+      "pm25": 23.8,
+      "baseline": 16.4,
+      "actual": 19.8,
+      "rf": 21.4,
+      "xgb": 28.2,
+      "xai_attributions": [
+        {
+          "feature": "PM2.5 Past 6h Moving Mean",
+          "delta": 0.8,
+          "type": "lag_momentum",
+          "desc": "Short-term inertial suspension in atmospheric column"
+        },
+        {
+          "feature": "Boundary Layer Diurnal Inversion",
+          "delta": 0.5,
+          "type": "meteorology",
+          "desc": "Nocturnal planetary boundary layer compression trapping particulate"
+        },
+        {
+          "feature": "Wind Speed Ventilation",
+          "delta": -0.3,
+          "type": "dispersion",
+          "desc": "Horizontal advective dispersion rate (2.4 m/s)"
+        },
+        {
+          "feature": "NO2 / NH3 Secondary Precursors",
+          "delta": 0.2,
+          "type": "chemistry",
+          "desc": "Precursor gases converting to secondary ammonium aerosol"
+        },
+        {
+          "feature": "Relative Humidity Hygroscopic Growth",
+          "delta": 0.1,
+          "type": "humidity",
+          "desc": "Aerosol moisture uptake increasing aerodynamic diameter"
+        }
+      ]
+    },
+    {
+      "hour": 18,
+      "time": "18:00",
+      "pm25": 23.8,
+      "baseline": 15.9,
+      "actual": 18.1,
+      "rf": 21.8,
+      "xgb": 26.3,
+      "xai_attributions": [
+        {
+          "feature": "PM2.5 Past 6h Moving Mean",
+          "delta": 0.8,
+          "type": "lag_momentum",
+          "desc": "Short-term inertial suspension in atmospheric column"
+        },
+        {
+          "feature": "Boundary Layer Diurnal Inversion",
+          "delta": 0.5,
+          "type": "meteorology",
+          "desc": "Nocturnal planetary boundary layer compression trapping particulate"
+        },
+        {
+          "feature": "Wind Speed Ventilation",
+          "delta": -0.3,
+          "type": "dispersion",
+          "desc": "Horizontal advective dispersion rate (2.4 m/s)"
+        },
+        {
+          "feature": "NO2 / NH3 Secondary Precursors",
+          "delta": 0.2,
+          "type": "chemistry",
+          "desc": "Precursor gases converting to secondary ammonium aerosol"
+        },
+        {
+          "feature": "Relative Humidity Hygroscopic Growth",
+          "delta": 0.1,
+          "type": "humidity",
+          "desc": "Aerosol moisture uptake increasing aerodynamic diameter"
+        }
+      ]
+    },
+    {
+      "hour": 19,
+      "time": "19:00",
+      "pm25": 24.1,
+      "baseline": 16.3,
+      "actual": 15.8,
+      "rf": 21.9,
+      "xgb": 31.0,
+      "xai_attributions": [
+        {
+          "feature": "PM2.5 Past 6h Moving Mean",
+          "delta": 0.9,
+          "type": "lag_momentum",
+          "desc": "Short-term inertial suspension in atmospheric column"
+        },
+        {
+          "feature": "Boundary Layer Diurnal Inversion",
+          "delta": 0.5,
+          "type": "meteorology",
+          "desc": "Nocturnal planetary boundary layer compression trapping particulate"
+        },
+        {
+          "feature": "Wind Speed Ventilation",
+          "delta": -0.3,
+          "type": "dispersion",
+          "desc": "Horizontal advective dispersion rate (2.4 m/s)"
+        },
+        {
+          "feature": "NO2 / NH3 Secondary Precursors",
+          "delta": 0.3,
+          "type": "chemistry",
+          "desc": "Precursor gases converting to secondary ammonium aerosol"
+        },
+        {
+          "feature": "Relative Humidity Hygroscopic Growth",
+          "delta": 0.2,
+          "type": "humidity",
+          "desc": "Aerosol moisture uptake increasing aerodynamic diameter"
+        }
+      ]
+    },
+    {
+      "hour": 20,
+      "time": "20:00",
+      "pm25": 23.7,
+      "baseline": 16.8,
+      "actual": 18.3,
+      "rf": 22.0,
+      "xgb": 40.1,
+      "xai_attributions": [
+        {
+          "feature": "PM2.5 Past 6h Moving Mean",
+          "delta": 0.8,
+          "type": "lag_momentum",
+          "desc": "Short-term inertial suspension in atmospheric column"
+        },
+        {
+          "feature": "Boundary Layer Diurnal Inversion",
+          "delta": 0.4,
+          "type": "meteorology",
+          "desc": "Nocturnal planetary boundary layer compression trapping particulate"
+        },
+        {
+          "feature": "Wind Speed Ventilation",
+          "delta": -0.3,
+          "type": "dispersion",
+          "desc": "Horizontal advective dispersion rate (2.4 m/s)"
+        },
+        {
+          "feature": "NO2 / NH3 Secondary Precursors",
+          "delta": 0.2,
+          "type": "chemistry",
+          "desc": "Precursor gases converting to secondary ammonium aerosol"
+        },
+        {
+          "feature": "Relative Humidity Hygroscopic Growth",
+          "delta": 0.1,
+          "type": "humidity",
+          "desc": "Aerosol moisture uptake increasing aerodynamic diameter"
+        }
+      ]
+    },
+    {
+      "hour": 21,
+      "time": "21:00",
+      "pm25": 24.0,
+      "baseline": 16.5,
+      "actual": 20.2,
+      "rf": 22.6,
+      "xgb": 36.4,
+      "xai_attributions": [
+        {
+          "feature": "PM2.5 Past 6h Moving Mean",
+          "delta": 0.9,
+          "type": "lag_momentum",
+          "desc": "Short-term inertial suspension in atmospheric column"
+        },
+        {
+          "feature": "Boundary Layer Diurnal Inversion",
+          "delta": 0.5,
+          "type": "meteorology",
+          "desc": "Nocturnal planetary boundary layer compression trapping particulate"
+        },
+        {
+          "feature": "Wind Speed Ventilation",
+          "delta": -0.3,
+          "type": "dispersion",
+          "desc": "Horizontal advective dispersion rate (2.4 m/s)"
+        },
+        {
+          "feature": "NO2 / NH3 Secondary Precursors",
+          "delta": 0.2,
+          "type": "chemistry",
+          "desc": "Precursor gases converting to secondary ammonium aerosol"
+        },
+        {
+          "feature": "Relative Humidity Hygroscopic Growth",
+          "delta": 0.2,
+          "type": "humidity",
+          "desc": "Aerosol moisture uptake increasing aerodynamic diameter"
+        }
+      ]
+    },
+    {
+      "hour": 22,
+      "time": "22:00",
+      "pm25": 23.9,
+      "baseline": 16.2,
+      "actual": 27.4,
+      "rf": 24.0,
+      "xgb": 43.9,
+      "xai_attributions": [
+        {
+          "feature": "PM2.5 Past 6h Moving Mean",
+          "delta": 0.9,
+          "type": "lag_momentum",
+          "desc": "Short-term inertial suspension in atmospheric column"
+        },
+        {
+          "feature": "Boundary Layer Diurnal Inversion",
+          "delta": 0.5,
+          "type": "meteorology",
+          "desc": "Nocturnal planetary boundary layer compression trapping particulate"
+        },
+        {
+          "feature": "Wind Speed Ventilation",
+          "delta": -0.3,
+          "type": "dispersion",
+          "desc": "Horizontal advective dispersion rate (2.4 m/s)"
+        },
+        {
+          "feature": "NO2 / NH3 Secondary Precursors",
+          "delta": 0.2,
+          "type": "chemistry",
+          "desc": "Precursor gases converting to secondary ammonium aerosol"
+        },
+        {
+          "feature": "Relative Humidity Hygroscopic Growth",
+          "delta": 0.2,
+          "type": "humidity",
+          "desc": "Aerosol moisture uptake increasing aerodynamic diameter"
+        }
+      ]
+    },
+    {
+      "hour": 23,
+      "time": "23:00",
+      "pm25": 23.6,
+      "baseline": 16.7,
+      "actual": 31.0,
+      "rf": 26.5,
+      "xgb": 34.8,
+      "xai_attributions": [
+        {
+          "feature": "PM2.5 Past 6h Moving Mean",
+          "delta": 0.7,
+          "type": "lag_momentum",
+          "desc": "Short-term inertial suspension in atmospheric column"
+        },
+        {
+          "feature": "Boundary Layer Diurnal Inversion",
+          "delta": 0.4,
+          "type": "meteorology",
+          "desc": "Nocturnal planetary boundary layer compression trapping particulate"
+        },
+        {
+          "feature": "Wind Speed Ventilation",
+          "delta": -0.2,
+          "type": "dispersion",
+          "desc": "Horizontal advective dispersion rate (2.4 m/s)"
+        },
+        {
+          "feature": "NO2 / NH3 Secondary Precursors",
+          "delta": 0.2,
+          "type": "chemistry",
+          "desc": "Precursor gases converting to secondary ammonium aerosol"
+        },
+        {
+          "feature": "Relative Humidity Hygroscopic Growth",
+          "delta": 0.1,
+          "type": "humidity",
+          "desc": "Aerosol moisture uptake increasing aerodynamic diameter"
+        }
+      ]
+    },
+    {
+      "hour": 24,
+      "time": "24:00",
+      "pm25": 23.8,
+      "baseline": 17.4,
+      "actual": 25.2,
+      "rf": 28.6,
+      "xgb": 28.3,
+      "xai_attributions": [
+        {
+          "feature": "PM2.5 Past 6h Moving Mean",
+          "delta": 0.8,
+          "type": "lag_momentum",
+          "desc": "Short-term inertial suspension in atmospheric column"
+        },
+        {
+          "feature": "Boundary Layer Diurnal Inversion",
+          "delta": 0.5,
+          "type": "meteorology",
+          "desc": "Nocturnal planetary boundary layer compression trapping particulate"
+        },
+        {
+          "feature": "Wind Speed Ventilation",
+          "delta": -0.3,
+          "type": "dispersion",
+          "desc": "Horizontal advective dispersion rate (2.4 m/s)"
+        },
+        {
+          "feature": "NO2 / NH3 Secondary Precursors",
+          "delta": 0.2,
+          "type": "chemistry",
+          "desc": "Precursor gases converting to secondary ammonium aerosol"
+        },
+        {
+          "feature": "Relative Humidity Hygroscopic Growth",
+          "delta": 0.1,
+          "type": "humidity",
+          "desc": "Aerosol moisture uptake increasing aerodynamic diameter"
+        }
+      ]
+    }
+  ],
+  "conditions": {
+    "wind_speed": 2.4,
+    "wind_direction": 142,
+    "temp": 24.2,
+    "dew_point": 15.1,
+    "humidity": 62.0,
+    "pressure": 915.2,
+    "solar_radiation": 420.0,
+    "rainfall": 0.0
+  },
+  "pollutants": {
+    "pm10": 48.2,
+    "no2": 26.4,
+    "so2": 8.1,
+    "co": 0.85,
+    "o3": 28.6,
+    "nh3": 18.4,
+    "nox": 34.2,
+    "benzene": 1.6
+  },
+  "xai_metadata": {
+    "global_top_features": [
+      {
+        "feature": "PM2.5_roll_mean_6h",
+        "importance": 0.3795
+      },
+      {
+        "feature": "PM2.5_lag0",
+        "importance": 0.1729
+      },
+      {
+        "feature": "PM2.5_roll_mean_24h",
+        "importance": 0.1286
+      },
+      {
+        "feature": "PM2.5",
+        "importance": 0.0983
+      },
+      {
+        "feature": "PM2.5_lag1",
+        "importance": 0.0215
+      },
+      {
+        "feature": "PM2.5_lag6",
+        "importance": 0.02
+      },
+      {
+        "feature": "PM2.5_roll_min_24h",
+        "importance": 0.019
+      },
+      {
+        "feature": "year",
+        "importance": 0.0149
+      }
+    ],
+    "causal_imputation_method": "Causal Forward-Fill & Expanding Past Median (Zero Lookahead)",
+    "model_confidence_r2": {
+      "h1": 0.149,
+      "h6": 0.087,
+      "h12": -0.028,
+      "h24": -0.08
+    },
+    "gain_over_persistence": "29.5% reduction in RMSE (15.69 vs 22.26 \u00b5g/m\u00b3)"
+  }
+}

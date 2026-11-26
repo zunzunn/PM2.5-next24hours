@@ -1,0 +1,74 @@
+[
+  {
+    "id": "site_162",
+    "name": "BTM Layout, Bengaluru",
+    "authority": "CPCB / KSPCB",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "lat": 12.9135,
+    "lon": 77.5951,
+    "has_trained_model": true,
+    "mode": "model",
+    "desc": "Primary continuous monitoring station equipped with PyTorch LSTM multi-horizon neural model."
+  },
+  {
+    "id": "site_164",
+    "name": "BWSSB Kadabesanahalli",
+    "authority": "CPCB",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "lat": 12.9352,
+    "lon": 77.6814,
+    "has_trained_model": false,
+    "mode": "sample",
+    "desc": "Outer Ring Road IT corridor station observing vehicular and construction emissions."
+  },
+  {
+    "id": "site_165",
+    "name": "City Railway Station",
+    "authority": "KSPCB",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "lat": 12.9757,
+    "lon": 77.5661,
+    "has_trained_model": false,
+    "mode": "sample",
+    "desc": "High-density central transit junction with peak morning & evening diesel combustion."
+  },
+  {
+    "id": "site_1554",
+    "name": "Hebbal",
+    "authority": "KSPCB",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "lat": 13.0292,
+    "lon": 77.5859,
+    "has_trained_model": false,
+    "mode": "sample",
+    "desc": "North Bengaluru gateway junction bordering international airport arterial corridor."
+  },
+  {
+    "id": "site_286",
+    "name": "Anand Vihar, Delhi",
+    "authority": "DPCC / CPCB",
+    "city": "Delhi",
+    "state": "Delhi",
+    "lat": 28.6468,
+    "lon": 77.3160,
+    "has_trained_model": false,
+    "mode": "sample",
+    "desc": "Trans-Yamuna interstate transit hub experiencing intense seasonal particulate spikes."
+  },
+  {
+    "id": "beijing_aoti",
+    "name": "Aotizhongxin, Beijing",
+    "authority": "MEP China",
+    "city": "Beijing",
+    "state": "China",
+    "lat": 39.982,
+    "lon": 116.397,
+    "has_trained_model": false,
+    "mode": "sample",
+    "desc": "Olympic Sports Center historical benchmark dataset (UCI Machine Learning Archive)."
+  }
+]

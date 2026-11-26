@@ -18,12 +18,12 @@ def load_env(env_path=".env"):
                 line = line.strip()
                 if line and not line.startswith("#") and "=" in line:
                     k, v = line.split("=", 1)
-                    os.environ.setdefault(k.strip(), v.strip())
+                    os.environ[k.strip()] = v.strip()
 
 load_env()
 load_env("../.env")
 
-API_KEY = os.getenv("XKDR_API_KEY", "aqi_demo_wbf92Qx21zX-Wa_Tg8Dx1nXe")
+API_KEY = os.getenv("XKDR_API_KEY", "aqi_LU-BSIcMRnXwkOjrMx21VdSufAmBAN9qDqFz9KNQ4pI")
 API_BASE = os.getenv("XKDR_API_BASE", "https://airquality.xkdr.org/v1")
 
 headers = {

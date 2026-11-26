@@ -143,6 +143,7 @@ Forecasted $\text{PM}_{2.5}$ values are translated into Central Pollution Contro
 │       └── dataset_quality_report.json
 ├── backend/
 │   ├── config.py                      # CPCB breakpoints and environment variables
+│   ├── server.py                      # REST API & Web Server (FastAPI / HTTP)
 │   ├── data/
 │   │   ├── xkdr_client.py             # XKDR API client with caching & retries
 │   │   ├── pipeline.py                # Causal cleaning, zero-leakage alignment
@@ -156,7 +157,13 @@ Forecasted $\text{PM}_{2.5}$ values are translated into Central Pollution Contro
 │   ├── test_xkdr_client.py            # API connectivity test
 │   ├── verify_milestone_1.py          # Data pipeline verification
 │   └── verify_milestone_2.py          # ML forecasting suite verification
-└── web/                               # Full-stack frontend application (React + Vite)
+└── web/                               # Weather-app themed interactive web app
+    ├── index.html                     # Landing page showcase & phone frame
+    ├── dashboard.html                 # 24-hour weather-style forecast dashboard
+    ├── css/                           # Design tokens & glassmorphic styles
+    ├── js/                            # AQI logic, Lucide SVGs & reactive controllers
+    ├── data/                          # Multi-station forecasts & metadata
+    └── design.md                      # UI/UX specifications & visual tokens
 ```
 
 ---
@@ -166,7 +173,7 @@ Forecasted $\text{PM}_{2.5}$ values are translated into Central Pollution Contro
 ### 1. Configure Environment:
 ```bash
 cp .env.example .env
-# XKDR_API_KEY is preconfigured with the official public demo key
+# XKDR_API_KEY is configured with the full-tier Indian Air Quality dataset API key
 ```
 
 ### 2. Verify XKDR API Connectivity:
@@ -182,6 +189,12 @@ python3 scripts/verify_milestone_1.py
 ### 4. Run Milestone 2 (Train & Benchmark ML Models):
 ```bash
 python3 scripts/verify_milestone_2.py
+```
+
+### 5. Launch Interactive Web App & Dashboard:
+```bash
+python3 backend/server.py 8000
+# Open http://localhost:8000 in your browser (or http://localhost:8000/dashboard.html)
 ```
 
 ---

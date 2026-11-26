@@ -1,0 +1,665 @@
+{
+  "Andaman And Nicobar": {
+    "count": 1,
+    "avg_pm25": 69.8,
+    "center": [
+      11.654,
+      92.734
+    ],
+    "cities": [
+      "Sri Vijaya Puram"
+    ]
+  },
+  "Andhra Pradesh": {
+    "count": 21,
+    "avg_pm25": 54.7,
+    "center": [
+      15.8899,
+      80.4685
+    ],
+    "cities": [
+      "Amaravati",
+      "Anantapur",
+      "Chittoor",
+      "Eluru",
+      "Guntur",
+      "Kadapa",
+      "Kakinada",
+      "Kurnool",
+      "Machilipatnam",
+      "Nellore",
+      "Ongole",
+      "Rajamahendravaram",
+      "Srikakulam",
+      "Tirumala",
+      "Tirupati",
+      "Vijayawada",
+      "Visakhapatnam"
+    ]
+  },
+  "Arunachal Pradesh": {
+    "count": 1,
+    "avg_pm25": 73.9,
+    "center": [
+      27.1034,
+      93.6796
+    ],
+    "cities": [
+      "Naharlagun"
+    ]
+  },
+  "Assam": {
+    "count": 9,
+    "avg_pm25": 58.0,
+    "center": [
+      26.1516,
+      92.2495
+    ],
+    "cities": [
+      "Byrnihat",
+      "Guwahati",
+      "Nagaon",
+      "Nalbari",
+      "Silchar",
+      "Sivasagar"
+    ]
+  },
+  "Bihar": {
+    "count": 40,
+    "avg_pm25": 171.9,
+    "center": [
+      25.6914,
+      85.5349
+    ],
+    "cities": [
+      "Araria",
+      "Arrah",
+      "Aurangabad",
+      "Begusarai",
+      "Bettiah",
+      "Bhagalpur",
+      "Bihar Sharif",
+      "Buxar",
+      "Chhapra",
+      "Darbhanga",
+      "Gaya",
+      "Gopalganj",
+      "Hajipur",
+      "Jamui",
+      "Katihar",
+      "Kishanganj",
+      "Kiul",
+      "Madhubani",
+      "Manguraha",
+      "Motihari",
+      "Munger",
+      "Muzaffarpur",
+      "Patna",
+      "Purnia",
+      "Rajgir",
+      "Saharsa",
+      "Samastipur",
+      "Sasaram",
+      "Sitamarhi",
+      "Siwan"
+    ]
+  },
+  "Chandigarh": {
+    "count": 3,
+    "avg_pm25": 74.8,
+    "center": [
+      30.7356,
+      76.7591
+    ],
+    "cities": [
+      "Chandigarh"
+    ]
+  },
+  "Chhattisgarh": {
+    "count": 14,
+    "avg_pm25": 61.8,
+    "center": [
+      21.7142,
+      82.2543
+    ],
+    "cities": [
+      "Bhilai",
+      "Bilaspur",
+      "Chhal",
+      "Korba",
+      "Kunjemura",
+      "Milupara",
+      "Raipur",
+      "Tumidih"
+    ]
+  },
+  "Delhi": {
+    "count": 60,
+    "avg_pm25": 212.4,
+    "center": [
+      28.6345,
+      77.1613
+    ],
+    "cities": [
+      "Delhi",
+      "New Delhi"
+    ]
+  },
+  "Gujarat": {
+    "count": 22,
+    "avg_pm25": 55.1,
+    "center": [
+      22.5727,
+      72.587
+    ],
+    "cities": [
+      "Ahmedabad",
+      "Ankleshwar",
+      "Bhavnagar",
+      "Gandhinagar",
+      "Mehsana",
+      "Nandesari",
+      "Rajkot",
+      "Surat",
+      "Vadodara",
+      "Vapi",
+      "Vatva"
+    ]
+  },
+  "Haryana": {
+    "count": 31,
+    "avg_pm25": 176.7,
+    "center": [
+      28.8994,
+      76.7609
+    ],
+    "cities": [
+      "Ambala",
+      "Bahadurgarh",
+      "Ballabgarh",
+      "Bhiwani",
+      "Charkhi Dadri",
+      "Dharuhera",
+      "Faridabad",
+      "Fatehabad",
+      "Gurugram",
+      "Hisar",
+      "Jind",
+      "Kaithal",
+      "Karnal",
+      "Kurukshetra",
+      "Mandikhera",
+      "Manesar",
+      "Narnaul",
+      "Palwal",
+      "Panchgaon",
+      "Panchkula",
+      "Panipat",
+      "Rohtak",
+      "Sirsa",
+      "Sonipat",
+      "Yamuna Nagar"
+    ]
+  },
+  "Himachal Pradesh": {
+    "count": 1,
+    "avg_pm25": 92.8,
+    "center": [
+      30.9439,
+      76.802
+    ],
+    "cities": [
+      "Baddi"
+    ]
+  },
+  "Jammu and Kashmir": {
+    "count": 3,
+    "avg_pm25": 70.3,
+    "center": [
+      34.0536,
+      74.9299
+    ],
+    "cities": [
+      "Pampore",
+      "Srinagar"
+    ]
+  },
+  "Jharkhand": {
+    "count": 4,
+    "avg_pm25": 45.3,
+    "center": [
+      23.7497,
+      86.441
+    ],
+    "cities": [
+      "Dhanbad",
+      "Jorapokhar",
+      "Pathardih"
+    ]
+  },
+  "Karnataka": {
+    "count": 42,
+    "avg_pm25": 33.7,
+    "center": [
+      14.097,
+      76.5761
+    ],
+    "cities": [
+      "Bagalkot",
+      "Belgaum",
+      "Bengaluru",
+      "Bidar",
+      "Chamarajanagar",
+      "Chikkaballapur",
+      "Chikkamagaluru",
+      "Davanagere",
+      "Dharwad",
+      "Gadag",
+      "Hassan",
+      "Haveri",
+      "Hubballi",
+      "Kalaburagi",
+      "Karwar",
+      "Kolar",
+      "Koppal",
+      "Madikeri",
+      "Mangalore",
+      "Mysuru",
+      "Raichur",
+      "Ramanagara",
+      "Shivamogga",
+      "Tumakuru",
+      "Udupi",
+      "Vijayapura",
+      "Yadgir"
+    ]
+  },
+  "Kerala": {
+    "count": 9,
+    "avg_pm25": 21.3,
+    "center": [
+      9.9566,
+      76.2974
+    ],
+    "cities": [
+      "Eloor",
+      "Ernakulam",
+      "Kannur",
+      "Kochi",
+      "Kollam",
+      "Kozhikode",
+      "Thiruvananthapuram",
+      "Thrissur"
+    ]
+  },
+  "Ladakh": {
+    "count": 1,
+    "avg_pm25": 43.6,
+    "center": [
+      34.1471,
+      77.5571
+    ],
+    "cities": [
+      "Leh"
+    ]
+  },
+  "Madhya Pradesh": {
+    "count": 30,
+    "avg_pm25": 62.6,
+    "center": [
+      23.6565,
+      77.8962
+    ],
+    "cities": [
+      "Bhopal",
+      "Damoh",
+      "Dewas",
+      "Gwalior",
+      "Indore",
+      "Jabalpur",
+      "Katni",
+      "Maihar",
+      "Mandideep",
+      "Pithampur",
+      "Ratlam",
+      "Sagar",
+      "Satna",
+      "Singrauli",
+      "Ujjain"
+    ]
+  },
+  "Maharashtra": {
+    "count": 106,
+    "avg_pm25": 61.8,
+    "center": [
+      19.1583,
+      74.0728
+    ],
+    "cities": [
+      "Ahmednagar",
+      "Akola",
+      "Ambernath",
+      "Amravati",
+      "Aurangabad",
+      "Badlapur",
+      "Beed",
+      "Belapur",
+      "Bhiwandi",
+      "Boisar",
+      "Chandrapur",
+      "Dhule",
+      "Dombivli",
+      "Hingoli",
+      "Jalgaon",
+      "Jalna",
+      "Kalyan",
+      "Kolhapur",
+      "Latur",
+      "Mahad",
+      "Malegaon",
+      "Mira-Bhayandar",
+      "Mumbai",
+      "Nagpur",
+      "Nanded",
+      "Nashik",
+      "Navi Mumbai",
+      "Parbhani",
+      "Pimpri-Chinchwad",
+      "Pune",
+      "Sangli",
+      "Satara",
+      "Solapur",
+      "Thane",
+      "Ulhasnagar",
+      "Vasai",
+      "Virar"
+    ]
+  },
+  "Manipur": {
+    "count": 2,
+    "avg_pm25": 35.0,
+    "center": [
+      24.7866,
+      93.9355
+    ],
+    "cities": [
+      "Imphal"
+    ]
+  },
+  "Meghalaya": {
+    "count": 3,
+    "avg_pm25": 63.8,
+    "center": [
+      25.7283,
+      91.8924
+    ],
+    "cities": [
+      "Byrnihat",
+      "Shillong"
+    ]
+  },
+  "Mizoram": {
+    "count": 1,
+    "avg_pm25": 57.5,
+    "center": [
+      23.7176,
+      92.7193
+    ],
+    "cities": [
+      "Aizawl"
+    ]
+  },
+  "Nagaland": {
+    "count": 1,
+    "avg_pm25": 56.0,
+    "center": [
+      25.6635,
+      94.099
+    ],
+    "cities": [
+      "Kohima"
+    ]
+  },
+  "Odisha": {
+    "count": 20,
+    "avg_pm25": 56.0,
+    "center": [
+      21.4684,
+      85.5653
+    ],
+    "cities": [
+      "Angul",
+      "Balasore",
+      "Barbil",
+      "Baripada",
+      "Bhubaneswar",
+      "Bileipada",
+      "Brajrajnagar",
+      "Byasanagar",
+      "Cuttack",
+      "Keonjhar",
+      "Nayagarh",
+      "Paradeep",
+      "Rairangpur",
+      "Rourkela",
+      "Suakati",
+      "Talcher",
+      "Tensa"
+    ]
+  },
+  "Puducherry": {
+    "count": 1,
+    "avg_pm25": 69.1,
+    "center": [
+      11.9309,
+      79.8027
+    ],
+    "cities": [
+      "Puducherry"
+    ]
+  },
+  "Punjab": {
+    "count": 8,
+    "avg_pm25": 171.9,
+    "center": [
+      30.8557,
+      75.8302
+    ],
+    "cities": [
+      "Amritsar",
+      "Bathinda",
+      "Jalandhar",
+      "Khanna",
+      "Ludhiana",
+      "Mandi Gobindgarh",
+      "Patiala",
+      "Rupnagar"
+    ]
+  },
+  "Rajasthan": {
+    "count": 50,
+    "avg_pm25": 62.1,
+    "center": [
+      26.4526,
+      74.9978
+    ],
+    "cities": [
+      "Ajmer",
+      "Alwar",
+      "Banswara",
+      "Baran",
+      "Barmer",
+      "Bharatpur",
+      "Bhilwara",
+      "Bhiwadi",
+      "Bikaner",
+      "Bundi",
+      "Chittorgarh",
+      "Churu",
+      "Dausa",
+      "Deeg",
+      "Dholpur",
+      "Dungarpur",
+      "Hanumangarh",
+      "Jaipur",
+      "Jaisalmer",
+      "Jalore",
+      "Jhalawar",
+      "Jhunjhunu",
+      "Jodhpur",
+      "Karauli",
+      "Khairthal",
+      "Kota",
+      "Kotputli",
+      "Nagaur",
+      "Pali",
+      "Pratapgarh",
+      "Rajsamand",
+      "Sawai Madhopur",
+      "Sikar",
+      "Sirohi",
+      "Sri Ganganagar",
+      "Tonk",
+      "Udaipur"
+    ]
+  },
+  "Sikkim": {
+    "count": 1,
+    "avg_pm25": 51.6,
+    "center": [
+      27.3385,
+      88.6141
+    ],
+    "cities": [
+      "Gangtok"
+    ]
+  },
+  "Tamil Nadu": {
+    "count": 38,
+    "avg_pm25": 53.3,
+    "center": [
+      11.6508,
+      78.9728
+    ],
+    "cities": [
+      "Ariyalur",
+      "Chengalpattu",
+      "Chennai",
+      "Coimbatore",
+      "Cuddalore",
+      "Dindigul",
+      "Gummidipoondi",
+      "Hosur",
+      "Kanchipuram",
+      "Karur",
+      "Madurai",
+      "Nagapattinam",
+      "Namakkal",
+      "Ooty",
+      "Palkalaiperur",
+      "Perundurai",
+      "Pudukottai",
+      "Ramanathapuram",
+      "Ranipet",
+      "Salem",
+      "Thanjavur",
+      "Thoothukudi",
+      "Tiruchirappalli",
+      "Tirunelveli",
+      "Tirupur",
+      "Vellore",
+      "Virudhunagar"
+    ]
+  },
+  "Telangana": {
+    "count": 15,
+    "avg_pm25": 61.1,
+    "center": [
+      17.464,
+      78.3931
+    ],
+    "cities": [
+      "Hyderabad"
+    ]
+  },
+  "Tripura": {
+    "count": 2,
+    "avg_pm25": 52.4,
+    "center": [
+      23.8402,
+      91.2807
+    ],
+    "cities": [
+      "Agartala"
+    ]
+  },
+  "Uttar Pradesh": {
+    "count": 81,
+    "avg_pm25": 176.7,
+    "center": [
+      27.7746,
+      78.8366
+    ],
+    "cities": [
+      "Agra",
+      "Anpara",
+      "Baghpat",
+      "Baraut",
+      "Bareilly",
+      "Bulandshahr",
+      "Fatehpur Sikri",
+      "Firozabad",
+      "Gajraula",
+      "Ghaziabad",
+      "Gorakhpur",
+      "Greater Noida",
+      "Hapur",
+      "Jhansi",
+      "Kanpur",
+      "Khora",
+      "Khurja",
+      "Lucknow",
+      "Mathura",
+      "Meerut",
+      "Modinagar",
+      "Moradabad",
+      "Muzaffarnagar",
+      "Noida",
+      "Prayagraj",
+      "Raebareli",
+      "Shamli",
+      "Varanasi",
+      "Vrindavan"
+    ]
+  },
+  "Uttarakhand": {
+    "count": 3,
+    "avg_pm25": 58.4,
+    "center": [
+      29.8526,
+      78.4304
+    ],
+    "cities": [
+      "Dehradun",
+      "Kashipur",
+      "Rishikesh"
+    ]
+  },
+  "West Bengal": {
+    "count": 23,
+    "avg_pm25": 51.3,
+    "center": [
+      23.0496,
+      87.9768
+    ],
+    "cities": [
+      "Asansol",
+      "Barrackpore",
+      "Durgapur",
+      "Haldia",
+      "Howrah",
+      "Kolkata",
+      "Siliguri"
+    ]
+  }
+}
